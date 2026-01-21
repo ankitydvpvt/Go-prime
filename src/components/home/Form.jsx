@@ -142,7 +142,7 @@ export default function Form() {
 
             <div>
               <label className="text-sm font-medium">
-                Existing Health Conditions *
+                Existing Health Conditions 
               </label>
               <Textarea
                 name="condition"

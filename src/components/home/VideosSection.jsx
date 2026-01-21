@@ -33,12 +33,12 @@ const VideosSection = () => {
       </div>
       <div className="flex gap-8 flex-nowrap animate-scroll ">
         {videos.map((item, index) => (
-          <div key={index} className="min-w-[320px] text-white ">
+          <div key={index} className="min-w-[320px] text-white transition-all duration-300 hover:scale-105 hover:shadow-xl">
+              
             <a
               href={`https://www.youtube.com/watch?v=${item.videoId}`}
               target="_blank"
-              rel="noopener noreferrer "
-            >
+              rel="noopener noreferrer ">
               <img
                 src={`https://img.youtube.com/vi/${item.videoId}/hqdefault.jpg`}
                 alt={item.title}

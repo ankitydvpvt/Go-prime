@@ -14,6 +14,10 @@ import {
   TbHeartbeat,
   TbMicroscope,
   TbDeviceMobileHeart,
+  TbHeartPlus,
+  TbStethoscope,
+  TbUserCheck,
+  TbShieldCheck,
 } from "react-icons/tb";
 
 /* ICON MAP */
@@ -22,6 +26,11 @@ const iconMap = {
   microscope: TbMicroscope,
   mobile: TbDeviceMobileHeart,
   leaf: BiLeaf,
+   heartPlus: TbHeartPlus,
+  stethoscope: TbStethoscope,
+  userCheck: TbUserCheck,
+  shieldCheck: TbShieldCheck,
+
 };
 
 /* PILLARS DATA */
@@ -36,7 +45,7 @@ const pillars = [
     title: "Personalized care rituals",
     description:
       "Clinical experts decode chronic disease drivers, interpret labs, and craft remission-focused plans.",
-    icon: "heartbeat",
+    icon: "heartPlus",
   },
  
   {
@@ -61,7 +70,7 @@ const pillars = [
     title: "Exercise Regimen",
     description:
       "Right Combination Of Endurance Aerobic, Strength, HIT, Yoga, Pranayam.  ",
-    icon: "leaf",
+    icon: "userCheck",
   },
   
 ];

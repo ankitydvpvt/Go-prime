@@ -8,6 +8,9 @@ import {
   Text,
   Tag,
 } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
+
+
 
 const productCategories = [
   {
@@ -49,6 +52,7 @@ const productCategories = [
 ];
 
 function Categories() {
+  const router = useRouter();
   return (
     <Box px="20px" py={{ base: 16, md: 20 }}>
       <Box maxW="1200px" mx="auto" px={{ base: 4, md: 8 }}>
@@ -103,7 +107,7 @@ function Categories() {
                   {item.title}
                 </Tag>
                 <Text color="#9facd0">{item.description}</Text>
-                <Button
+               <Button onClick={() => router.push("/contact")}
                   rounded="full"
                   color="white"
                   bg="#0aa4eb"
@@ -111,7 +115,7 @@ function Categories() {
                   size="sm"
                   alignSelf="flex-start"
                 >
-                  View Disease Protocol
+                 Book Free Consultation
                 </Button>
               </Stack>
             </Stack>

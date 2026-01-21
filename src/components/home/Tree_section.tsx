@@ -133,6 +133,7 @@ export default function Tree_section() {
 
                   return (
                     <HStack
+                    w={{  sm: "80%", md: "150", lg: "150" }}
                       key={item.title}
                       spacing={3}
                       bg="whiteAlpha.100"

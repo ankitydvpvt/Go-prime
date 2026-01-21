@@ -2,7 +2,9 @@
 
 import Tree_section from "@/components/home/Tree_section";
 import Footer from "@/components/Universal/Footer";
-import Navigation from "@/components/Universal/Navigation";
+import { NavbarDemo } from "@/components/Universal/NavbarDemo";
+
+
 import { Box } from "@chakra-ui/react";
 
 export default function Home() {
@@ -12,7 +14,8 @@ export default function Home() {
       minH="100vh"
       bgGradient="linear(to-r,  #026aa2, #35b6b4)"
     >
-      <Navigation/>
+      <NavbarDemo/>
+      
 
 
       {/* Main Content */}
