@@ -69,7 +69,7 @@ export default function Footer() {
               >
                 xx
               </Box>
-              <Heading size="md">xxxxxxx</Heading>
+              <Heading size="md">PRIME | VITALS</Heading>
             </Flex>
 
             <Text color="whiteAlpha.800" mb={4}>
@@ -170,7 +170,7 @@ export default function Footer() {
           color="whiteAlpha.700"
         >
           <Text color="#5a4237">
-            © {new Date().getFullYear()} Prakritify Ayurveda. All rights
+            © {new Date().getFullYear()} PRIME VITALS Ayurveda. All rights
             reserved.
           </Text>
 

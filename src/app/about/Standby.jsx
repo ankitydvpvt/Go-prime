@@ -55,24 +55,24 @@ export const valuesIcons = [
 
 const Standby = () => {
   return (
-    <div className='bg-[#f6f8f9] h-[90vh]'>
+    <div className='bg-[#022333] '>
         
-    <div className=' text-black text-center text-4xl font-bold pt-10 '>
+    <div className=' text-[#1ba6ec] text-center text-4xl font-bold pt-10 underline'>
       What we stand by
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-10 gap-6">
         {valuesIcons.map((item)=>(
             <div
       key={item.id}
-      className={`${item.bgColor} rounded-3xl p-6 relative`}
+      className={`bg-[#193847]   rounded-3xl m-10 pb-5 relative`}
     >
-        <div  className='flex items-center justify-center'>
+        <div  className='flex items-center justify-center p-10'>
             <img src={item.image} alt="" />
         </div>
       
       
-      <p className="text-lg text-black text-center">{item.title}</p>
-      <p className="text-lg text-black text-center">{item.subtitle}</p>
+      <p className="text-lg text-white text-center">{item.title}</p>
+      <p className="text-lg text-white text-center">{item.subtitle}</p>
 
 
      

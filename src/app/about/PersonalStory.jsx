@@ -4,21 +4,21 @@ import { LuQuote } from "react-icons/lu";
     id: 1,
     text: "Thanks to a truly caring customer from my previous venture, I was introduced to a new lifestyle. My family, including my 9 year old daughter, has been medicine-free for the last 6 odd years now...",
     author: "Anurag Dalmia",
-    role: "Founder at Wellfinity",
+    role: "Founder at PRIME VITALS",
     bgColor: "bg-[#fff1ec]" // light peach
   },
   {
     id: 2,
     text: "In my experience as a general surgeon for almost a decade, I had witnessed many patients suffering from chronic diseases such as Diabetes, Hypertension, Heart disease, Obesity, PCOD, Gout and more...",
     author: "Dr. Thangadurai",
-    role: "Founder at Wellfinity",
+    role: "Founder at PRIME VITALS",
     bgColor: "bg-[#f1f5ff]" // light blue
   },
   {
     id: 3,
     text: "My work is dedicated to the health of humanity and the planet we call home. It is critical that our pursuit of optimal health and longevity begins with an effort towards a collective rise in consciousness...",
     author: "Dr. Ashwani",
-    role: "Founder at Wellfinity",
+    role: "Founder at PRIME VITALS",
     bgColor: "bg-[#eef9ff]" // light cyan
   }
 ];

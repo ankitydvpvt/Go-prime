@@ -20,7 +20,7 @@ import React from 'react'
     id: 3,
     title: "We are motivated by challenges",
     description:
-      "At Wellfinity, we believe in pushing the boundaries of our potential in order to provide solutions to the toughest problems. We are open to solicitations & internalization so that we may eventually take the best decision in the larger interest of our clientele.",
+      "At PRIME VITALS, we believe in pushing the boundaries of our potential in order to provide solutions to the toughest problems. We are open to solicitations & internalization so that we may eventually take the best decision in the larger interest of our clientele.",
     image: "https://img.icons8.com/?size=100&id=81237&format=png&color=000000",
     align: "left",
   },
@@ -45,7 +45,7 @@ import React from 'react'
 
 const Name = () => {
   return (
-    <div className='text-white p-10 '>
+    <div className='text-white p-10   '>
       <div>
         <div className='flex items-center justify-center m-10'>
 
@@ -55,12 +55,12 @@ const Name = () => {
             More About XXXXXX
         </p>
         <div className="text-xl text-center max-w-3xl mx-auto px-4 m-10">
-            Team Wellfinity comprises of an integrative team of experts from various disciplines
+            Team PRIME VITALS comprises of an integrative team of experts from various disciplines
 of science and medicine and some of us even outside the industry.
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-6">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div className="max-w-6xl mx-auto px-6 flex">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-16 ">
     {features.map((item) => (
       <div
         key={item.id}

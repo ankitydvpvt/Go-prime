@@ -11,10 +11,10 @@ const Third = () => {
         <div className="text-6xl"></div>
 
         <div>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Wellfinity was founded by{" "}
+          <div className="text-3xl md:text-4xl font-semibold mb-4">
+            PRIME VITALS was founded by{" "}
             <span className="font-bold">3 passionate professionals</span>
-          </h2>
+          </div>
 
           <p className="text-lg text-gray-700 mb-4">
             Who came together with a common intention – they were tired of the
@@ -25,7 +25,7 @@ const Third = () => {
           <p className="text-lg text-gray-700">
             From our own individual experiences, each of us came to the
             realization that not only is disease reversal possible, but also
-            that it is just the first step. Wellfinity was started with the
+            that it is just the first step. PRIME VITALS was started with the
             below philosophy in mind.
           </p>
         </div>

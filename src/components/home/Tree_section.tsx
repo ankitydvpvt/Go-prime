@@ -12,10 +12,9 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FiDroplet, FiHeart, FiTrendingUp } from "react-icons/fi";
+
 import AnimatedImage from "@/components/home/AnimatedImage";
 import ValuePropositions from "@/components/home/ValuePropositions";
-// import ProductionShowcase from "@/components/home/ProductionShowcase";
-// import WellnessJourney from "@/components/home/WellnessJourney";
 import OurStory from "@/components/home/OurStory";
 import Categories from "@/components/home/Categories";
 import Testimonials from "@/components/home/Testimonials";
@@ -24,13 +23,10 @@ import CallToAction from "@/components/home/CallToAction";
 import VideosSection from "@/components/home/VideosSection";
 import Form from "@/components/home/Form";
 
-
-
-
 // Motion wrapper
 const MotionBox = motion(Box);
 
-// SAFE data (no functions)
+// SAFE data
 const highlights = [
   { icon: "heart", title: "Root Cause Analysis" },
   { icon: "trend", title: "Clinical Research Validation" },
@@ -47,7 +43,6 @@ const iconMap = {
 export default function Tree_section() {
   return (
     <div>
-      
       <Box
         bgGradient="linear(to-br, deepGreen, brand.700)"
         color="white"
@@ -78,71 +73,78 @@ export default function Tree_section() {
             spacing={{ base: 12, md: 16 }}
           >
             {/* LEFT CONTENT */}
-            <Stack spacing={8} maxW="520px">
-              {/* <Text
-              textTransform="uppercase"
-              fontSize="sm"
-              letterSpacing="widest"
-              color="whiteAlpha.700"
-            >
-              Ancient wisdom · Modern science
-            </Text> */}
-
+            <Stack spacing={8} maxW="520px" mx={{ base: "auto", md: "0" }}>
               <Heading
                 fontSize={{ base: "2.4rem", md: "3.4rem" }}
                 lineHeight="1.1"
+                textAlign={{ base: "center", md: "left" }}
               >
                 Chronic Disease Management Through Functional Medicine
               </Heading>
 
-              <Text  fontSize={{ base: "md", md: "lg" }} color="whiteAlpha.800">
-                {/* Explore high-potency formulations, nutrition protocols, and
-              personalized rituals designed to restore balance from the inside
-              out. */}
-              <div className=" flex font-bold text-2xl text-center  justify-center ">
-                 INTEGRATING
-              </div>
-               <div className="flex font-bold text-center  justify-center">
-                 Ancient wisdom  · Modern science · Nutrition 
-               </div>
-                <div className="flex font-bold text-center  justify-center ">
-                   Lifestyle Approch · Herbal         Medication 
-                </div>
-              </Text>
+              {/* Text block (color preserved) */}
+              <Stack spacing={1} textAlign="center">
+                <Text
+                  fontWeight="bold"
+                  fontSize={{ base: "2xl", md: "2xl" }}
+                  color="whiteAlpha.800"
+                >
+                  INTEGRATING
+                </Text>
 
-              {/* CTA Buttons */}
-              <HStack className="flex text-center justify-center" spacing={4} flexWrap="wrap">
+                <Text
+                  fontWeight="bold"
+                  fontSize={{ base: "md", md: "lg" }}
+                  color="whiteAlpha.800"
+                >
+                  Ancient wisdom · Modern science · Nutrition
+                </Text>
+
+                <Text
+                  fontWeight="bold"
+                  fontSize={{ base: "md", md: "lg" }}
+                  color="whiteAlpha.800"
+                >
+                  Lifestyle Approch · Herbal Medication
+                </Text>
+              </Stack>
+
+              {/* CTA */}
+              <HStack spacing={4} justify="center" flexWrap="wrap">
                 <Button
                   size="lg"
                   bg="#026aa2"
                   color="black"
                   rounded="full"
                   _hover={{ bg: "#afd4e6" }}
-                  display="flex"
-                  justifyContent="center"
                 >
                   Book Now
                 </Button>
               </HStack>
 
               {/* Highlights */}
-              <Stack spacing={4} direction={{ base: "column", md: "row" }}>
+              <Stack
+                spacing={4}
+                direction={{ base: "column", md: "row" }}
+                align={{ base: "center", md: "flex-start" }}
+              >
                 {highlights.map((item) => {
                   const IconComponent =
                     iconMap[item.icon as keyof typeof iconMap];
 
                   return (
                     <HStack
-                    w={{  sm: "80%", md: "150", lg: "150" }}
                       key={item.title}
                       spacing={3}
                       bg="whiteAlpha.100"
                       px={4}
                       py={3}
                       rounded="xl"
+                      w={{ base: "100%", sm: "80%", md: "150px" }}
+                      justify={{ base: "center", md: "flex-start" }}
                     >
                       <Icon as={IconComponent} boxSize={5} color="red" />
-                      <Text className="" fontWeight="500">
+                      <Text fontWeight="500" color="white">
                         {item.title}
                       </Text>
                     </HStack>
@@ -152,7 +154,7 @@ export default function Tree_section() {
             </Stack>
 
             {/* RIGHT IMAGE */}
-            <Box position="relative">
+            <Box position="relative" w="100%" maxW="500px" mx="auto">
               {/* Blur glow */}
               <Box
                 position="absolute"
@@ -164,37 +166,38 @@ export default function Tree_section() {
 
               <AnimatedImage />
 
+              {/* WhatsApp floating */}
               <a
-                  href="https://wa.me/9911024406"
-                  target="_blank"
-                  className="group fixed top-6 right-6 z-50"
-                >
-                  <span className="absolute right-16 top-1/2 -translate-y-1/2 scale-0 rounded bg-black px-3 py-1 text-sm text-white transition-all group-hover:scale-100">
-                    Chat on WhatsApp
-                  </span>
+                href="https://wa.me/9911024406"
+                target="_blank"
+                className="group fixed top-4 right-4 md:top-6 md:right-6 z-50"
+              >
+                <span className="absolute right-16 top-1/2 -translate-y-1/2 scale-0 rounded bg-black px-3 py-1 text-sm text-white transition-all group-hover:scale-100">
+                  Chat on WhatsApp
+                </span>
 
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg hover:scale-110 transition">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                      className="h-8 w-8"
-                      alt="WhatsApp"
-                    />
-                  </div>
-                </a>
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg hover:scale-110 transition">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                    className="h-8 w-8"
+                    alt="WhatsApp"
+                  />
+                </div>
+              </a>
             </Box>
           </SimpleGrid>
         </MotionBox>
-        <Form/>
+
+        <Form />
       </Box>
+
       <ValuePropositions />
-      {/* <ProductionShowcase/> */}
-      {/* <WellnessJourney/> */}
       <OurStory />
       <Categories />
       <Testimonials />
-      <VideosSection/>
+      <VideosSection />
       <BlogHighlights />
-      <CallToAction/>
+      <CallToAction />
     </div>
   );
 }

@@ -59,24 +59,29 @@ img:"https://plus.unsplash.com/premium_photo-1664203067979-47448934fd97?fm=jpg&q
 
 const Team = () => {
   return (
-    <div className='bg-[#f6f8f9] p-20'>
-      <div className='text-3xl font-bold text-center'>
+    <div className='bg-[#052332] pt-10 text-[#23a6e7] '>
+      <div className='lg:text-6xl md:text-4xl text-4xl font-bold text-center'>
         An integrative team of experts
 </div>
 <p className="text-center w-auto p-10 ">
-    Team Wellfinity comprises of an integrative team of experts from various disciplines of
+    Team PRIME VITALS comprises of an integrative team of experts from various disciplines of
 science and medicine and some of us even outside the industry.
 </p>
-<div className='mx-auto w-full max-w-3xl p-7    grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
-    {teamMembers.map((member) => (
-  <div key={member.id} className="text-center p-4 ">
-    <img
-      src={member.img}
-      alt={member.name}
-      className="mx-auto h-20 w-20 rounded-full object-cover"
-    />
-    <h3 className="mt-4 font-semibold">{member.name}</h3>
-    <p className="text-sm text-gray-600">{member.role}</p>
+<div className='mx-auto w-full max-w-3xl p-7     grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
+    {teamMembers.map((member) => (  
+  <div key={member.id} className="text-center m-5   items-center justify-center   ">
+   <div className="bg-[#193847] p-4 rounded-full 
+hover:ring-8 hover:ring-[#09c0f7]
+transition-all duration-300 hover:scale-100">
+  <img  
+    src={member.img}
+    alt={member.name}
+    className="mx-auto h-16 w-16 md:h-20 md:w-20 rounded-full object-cover"
+  />
+</div>
+
+<h3 className="mt-4 font-semibold">{member.name}</h3>
+<p className="text-sm text-gray-300">{member.role}</p>
   </div>
 ))}
 </div>
