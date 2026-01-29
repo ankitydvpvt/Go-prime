@@ -67,7 +67,7 @@ export default function Footer() {
                 letterSpacing="widest"
                 fontSize="sm"
               >
-                xx
+                PV
               </Box>
               <Heading size="md">PRIME | VITALS</Heading>
             </Flex>

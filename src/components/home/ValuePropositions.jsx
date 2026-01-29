@@ -93,7 +93,7 @@ export default function ValuePropositions() {
           letterSpacing="widest"
           color="#026aa2"
         >
-          Why xxxxxxx works for chronic disease
+          Why Prime Vitals  works for chronic disease
         </Text>
 
         <Heading
